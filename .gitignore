@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+build/
+dist/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Data and model artefacts (never committed; see data/datasets/ for manifests)
+data/raw/
+data/processed/
+*.tar.xz
+*.ckpt
+*.pt
+*.pth
+*.onnx
+
+# Experiment output
+outputs/
+runs/
+results/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
