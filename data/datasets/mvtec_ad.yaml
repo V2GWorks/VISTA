@@ -1,0 +1,24 @@
+# MVTec AD: industrial anomaly detection benchmark.
+# The data itself is never committed. Download the archive from the source
+# page (accepting the licence there), then run scripts/prepare_mvtec.py.
+name: mvtec_ad
+source: https://www.mvtec.com/company/research/datasets/mvtec-ad
+licence: CC BY-NC-SA 4.0
+commercial_use: false
+citation: >
+  Bergmann, Batzner, Fauser, Sattlegger, Steger. "The MVTec Anomaly Detection
+  Dataset: A Comprehensive Real-World Dataset for Unsupervised Anomaly
+  Detection". International Journal of Computer Vision, 2021.
+
+layout:
+  train: train/good            # defect-free images only
+  test: test/<defect_type>     # 'good' plus one folder per defect type
+  ground_truth: ground_truth/<defect_type>   # binary masks, *_mask.png
+
+categories:
+  objects: [bottle, cable, capsule, hazelnut, metal_nut, pill, screw, toothbrush, transistor, zipper]
+  textures: [carpet, grid, leather, tile, wood]
+
+# Categories we start with: one object, one texture, so the baseline is
+# tested on both kinds of anomaly before we scale to all 15.
+initial: [bottle, carpet]

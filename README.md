@@ -28,8 +28,8 @@ Every stage exchanges data as an `InspectionResult` ([`src/vista/schema.py`](src
 
 - [x] Repo tooling: lint, tests, CI
 - [x] Inspection result schema
-- [ ] Dataset preparation (MVTec AD)
-- [ ] Baseline anomaly model
+- [x] Dataset preparation (MVTec AD)
+- [ ] Baseline anomaly model (PatchCore, see [ADR 0001](docs/decisions/0001-baseline-model.md))
 - [ ] Evaluation harness (image AUROC, pixel AUROC, PRO, latency)
 - [ ] Inference API
 - [ ] Web demo
