@@ -1,6 +1,6 @@
 # VISTA
 
-**Visual Inspection & Spatial Tracking Analytics**: find, localise and report defects in images of manufactured parts and materials.
+**Visual Inspection System for Testing Anomalies**: find, localise and report defects in images of manufactured parts and materials.
 
 > Status: early development. The pipeline below is the target design; this README tracks what actually works.
 
