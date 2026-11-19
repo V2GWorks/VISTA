@@ -30,7 +30,8 @@ Every stage exchanges data as an `InspectionResult` ([`src/vista/schema.py`](src
 - [x] Inspection result schema
 - [x] Dataset preparation (MVTec AD)
 - [ ] Baseline anomaly model (PatchCore, see [ADR 0001](docs/decisions/0001-baseline-model.md))
-- [ ] Evaluation harness (image AUROC, pixel AUROC, PRO, latency)
+- [x] Results store (JSON Lines) and image-level metrics (AUROC, precision/recall at a target false-positive rate)
+- [ ] Pixel-level evaluation (pixel AUROC, PRO) and latency
 - [ ] Inference API
 - [ ] Web demo
 
